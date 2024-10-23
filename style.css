@@ -30,6 +30,10 @@ li {
     flex: 1;
 }
 
+.container  {
+    padding: 50px 0;
+}
+
 .flex {
     display: flex;
 }
@@ -43,6 +47,11 @@ li {
 .text--orange {
     color: #EB8317;
 }
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
 
 /* Navigation Bar */
 
@@ -152,3 +161,6 @@ nav{ /*Navigation bar*/
 .about-me__img {
     width: 100%; /*stops image going outside of parent ---- .about-me___img--container*/
 }
+
+
+/*Tech Stack*/
