@@ -55,11 +55,12 @@ section:nth-child(even) {
 
 /* Navigation Bar */
 
-nav{ /*Navigation bar*/
+nav  { 
     height: 100px;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,7 +113,6 @@ nav{ /*Navigation bar*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     max-width: 600px;
     margin: 0 auto;
     text-align: center; 
@@ -159,8 +159,21 @@ nav{ /*Navigation bar*/
 }
 
 .about-me__img {
-    width: 100%; /*stops image going outside of parent ---- .about-me___img--container*/
+    width: 100%;  /*stops image going outside of parent ---- .about-me___img--container*/
+
 }
 
 
 /*Tech Stack*/
+
+.language__image {
+    width: 100%;
+    max-width: 100px;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
