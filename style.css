@@ -11,6 +11,12 @@ h1 h2, h3, h4, h5, h6, span {
     line-height: 1.25;
 }
 
+h1 {
+    font-size: 36px
+    ;
+}
+
+
 p {
     line-height: 1.5;
     font-size: 16px;
@@ -20,9 +26,27 @@ li {
     list-style-type: none;
 }
 
+.flex-1 { /*Short for Flex-grow property which specifies within a container and element should take up, relative to other elements.*/
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--orange {
+    color: #EB8317;
+}
+
 /* Navigation Bar */
 
-nav{
+nav{ /*Navigation bar*/
     height: 100px;
     width: 100%;
     max-width: 1000px;
@@ -32,7 +56,7 @@ nav{
     align-items: center;
 }
 
-.nav__link--list {
+.nav__link--list { 
     display: flex;
 }
 
@@ -44,7 +68,7 @@ nav{
 }
 
 .nav__link--anchor-primary{
-    background-color: #6030b1;
+    background-color: #10375C;
     color: white;
     padding: 8px 20px;
     border-radius: 50px;
@@ -52,12 +76,79 @@ nav{
 }
 
 .nav__link--anchor-primary:hover {
-    background-color: #5d3eff;
+    background-color: #F3C623;
 }
 
 .personal__logo {
-    color: #6030b1;
+    color: #10375C;
     font-size: 24px;
     margin: 0 12px;
     font-weight: bold;
+}
+
+/*About Me*/
+
+#about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.50);
+    margin-bottom: 28px; 
+}
+
+.about-me__picture {
+    width: 100%; /**/
+
+    /* Improving Picture*/
+    transform: scale(4); /*Zooms into picture*/
+    padding-left: 10px; /*centers left*/
+    padding-top: 5px; /*centers top*/
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px; /*Padding  goes up and down + left and right*/
+}
+
+.about-me__img--container {
+    flex: 1; /*makes image same height as page*/
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    width: 100%; /*stops image going outside of parent ---- .about-me___img--container*/
 }
