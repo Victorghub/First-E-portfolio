@@ -15,6 +15,9 @@ h1 {
     font-size: 36px;
 }
 
+a {
+    text-decoration: none;
+}
 
 p {
     line-height: 1.5;
@@ -306,11 +309,51 @@ nav  {
 /*Footer*/
 
 footer {
-    background-color: #242424;
+    background-color: black;
 }
 
 .footer__logo--img {
     width: 70px;
     height: 70px;
-    
+}
+
+.footer__row {
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper  {
+    color: white;
+}
+
+.footer__social--list {
+    margin-bottom: 28px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__anchor:hover .footer__logo--popper{
+     transform: translateX(60px);
+     opacity: 1;
 }
